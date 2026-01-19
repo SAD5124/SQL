@@ -1,4 +1,4 @@
 # SQL
 My SQL Learning. 
 <br>
-Author :- Suraj Dake
+Author :- Suraj Anant Dake
