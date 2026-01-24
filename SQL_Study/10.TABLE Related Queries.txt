@@ -1,0 +1,33 @@
+TABLE Related Queries :-
+
+1} CREATE :- create used to create table schema(design) ==> columns
+
+	CREATE TABLE table_name (
+		column_name1 datatype constraint,
+		column_name2 datatype constraint
+			);
+
+EX :-	CREATE TABLE student (
+		rollno INT PRIMARY KEY,         //PRIMARY KEY = 1} not NULL
+		name VARCHAR(50) 			      2} Unique ID
+			);
+
+2} SELECT & VIEW all Column :- select all from table name and print
+	
+	SELECT * FROM table_name;
+
+
+EX :- 	SELECT * FROM student;
+
+3} INSERT :- 
+
+	INSERT INTO table_name(col_name1, col_name2)				INSERT INTO student VALUES(col1_v1, col2_v1);
+	VALUES									INSERT INTO student VALUES(col1_v2, col2_v2);
+	(col1_v1, col2_v1),					OR
+	(col1_v2, col2_v2),
+
+EX :- 	INSERT INTO student(rollno, name)
+	VALUES									INSERT INTO student VALUES(101, "SHIV");
+	(101, "SHIV"),						OR		INSERT INTO student VALUES(102, "SURAJ");
+	(102, "SURAJ");
+

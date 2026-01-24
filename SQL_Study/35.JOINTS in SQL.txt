@@ -1,0 +1,25 @@
+JOINTS in SQL :-
+		JOIN is used to combine row from two or more tables, based on related column between them
+
+
+	Employee(Parent Table)		teacher(Child Table)
+		
+	emp_id  	name		emp_id		Salary
+	     101	Suraj		103		50000
+	     102	Pranav		102		30000
+	     	
+
+ 	JOIN two Table and take common info or different info from both tables
+
+Types of Joins :-
+
+     	(-)   (-)	 (-)     (-)     (-)	 (-)     (-)	 (-)      
+       ( A(|=|)B )	(|=|A(|=|)B )	( A(|=|)B|=|)	(|=|A(|=|)B|=|)
+	(_)   (_)	 (_)     (_)	 (_)     (_)	 (_)       (_)
+
+ 	INNER JOIN	LEFT JOIN	RIGHT JOIN	FULL JOIN
+			    |		     |		    |
+			    |		     |              |
+			    +----------------+--------------+
+					     |
+					OUTER JOINS

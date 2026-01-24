@@ -1,0 +1,28 @@
+Cascading for FK :- meaning change in one place, can change in another place reflect change in it
+
+
+	course(Parent Table)				teacher(Child Table)
+		
+	cou_id(PK)	name			tea_id	name	cou_id(FK)
+	     101	science		/	101	Krish	101
+	     102	English        <===	102	Shiv	103
+	     103  	hindi		\	103	RAM	102
+					FK	104	Radha	102
+
+
+
+1} On DELETE Cascading :-
+			  When we create foreign key using this option , it deletes referencing rows in the child table
+			  when referenced row is deleted in parent table which has primary key.
+
+2} On UPDATE Cascading :- 
+			  When we create foreign key using UPDATE CASCADE the referencing row are updated in child table
+			  when reference row is updated in parent table which has primary key
+
+	CREATE TABLE student (
+		id INT PRIMARY KEY, 
+		coursed INT,
+		FOREIGN KEY(courseID) REFERENCES course(id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+			);

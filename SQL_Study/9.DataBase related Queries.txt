@@ -1,0 +1,17 @@
+DataBase related Queries :-
+
+CREATE DATABASE db_name;
+
+CREATE DATABASE IF NOT EXISTS db_name; 		 // It gives Warning not an error if DataBase already exist. 
+  						// So always use it.
+
+EX :- CREATE DATABASE IF NOT EXISTS collage;
+
+DROP DATABASE db_name;
+
+DROP DATABASE IF EXISTS db_name;        	// It gives Warning not an error if DataBase Not exist. 
+  						// So always use it.
+
+SHOW DATABASES:
+
+SHOW TABLES;

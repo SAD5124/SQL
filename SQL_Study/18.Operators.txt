@@ -1,0 +1,22 @@
+OPERATORS :-
+
+	AND (to check for both condition to be true)
+		
+		SELECT * FROM student WHERE marks > 80 AND city = "Mumbai";
+
+	OR (to check for one of the conditions to be true)
+
+		SELECT * FROM student WHERE marks > 90 AND city = "Mumbai";
+	
+	Between (select for given range)
+
+		SELECT * FROM student WHERE marks BETWEEN 80 AND 90;
+
+	IN (matches any value in list)
+
+		SELECT * FROM student WHERE city IN ("Pune", "Mumbai");
+
+	NOT IN(to negate given condition)
+
+		SELECT * FROM student WHERE city NOT IN ("Mumbai","Delhi");
+

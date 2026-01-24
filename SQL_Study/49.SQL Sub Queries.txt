@@ -1,0 +1,38 @@
+SQL Sub Queries :- 
+
+		A Subquery or inner query or Nested query is query within another SQL query
+		It involves 2 select statement 
+
+		( ----------- )
+	      (	     QUERY     )
+	    {			 }
+	      (  {Sub Query}   )
+		 (_________)
+
+	Syntax :-
+	SELECT column(s)
+	FROM table_name
+	WHERE col_name operator
+	( subquery );
+
+EX :- 
+	1} Get names of all students who scored more than class average			student
+											rollno 	name		marks	city
+	STEP 1 : Find avg of class							101 	anil 		78	pune
+	STEP 2 : FIND names of students with marks > avg				102	bhumika		93	mumbai
+											103	chetan		85	mumbai
+	2} FIND names of all student with even roll numbers				104	dhruv		96	delhi
+											105	emanuel		92	delhi
+	STEP 1 : Find even roll numbers							106	farah		82	delhi
+	STEP 2 : FIND names of students with even roll no
+
+	EX with FROM
+	3} FIND max marks from student of Delhi
+
+	STEP 1 : FIND student of Delhi
+	STEP 2 : Find their max marks using sublist in step 1
+
+	EX with SELECT
+	SELECT ( SELECT MAX(marks) FROM student), name
+	FROM student;
+	

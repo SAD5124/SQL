@@ -1,0 +1,8 @@
+SELECT in detail :-
+			used to select data from database
+
+Basic Syntax :-
+	SELECT col1, col2 FROM table_name;
+	
+To Select ALL
+	SELECT * FROM table_name;

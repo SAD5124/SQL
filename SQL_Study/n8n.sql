@@ -1,0 +1,16 @@
+CREATE DATABASE sad;
+
+use sad;
+
+
+CREATE TABLE top_trends (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    isposted BOOLEAN DEFAULT FALSE,
+    createdat TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updatedat TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    deletedat TIMESTAMP NULL,
+    prompt TEXT NOT NULL,
+    thumbnail_url TEXT,
+    code TEXT,
+    tag TEXT
+);

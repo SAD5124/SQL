@@ -1,0 +1,38 @@
+FULL Join :- 
+     	    Returns all records when there is match in either left or right table		 (-)     (-)         
+    	         								        	(|=|A(|=|)B|=|)	
+		 										 (_)     (_)	
+	Syntax :-
+	SELECT * FROM student as s		LEFT Join
+	LEFT JOIN course as c			UNION
+	ON s.id = c.id 				RIGHT Join
+	UNION 
+	SELECT * FROM student as s
+	RIGHT JOIN course as c
+	ON s.id = c.id; 
+
+EX :- 
+	student(LEFT) 				course(RIGHT)
+	student_id   	name			student_id	course			
+	101		Suraj			102		English
+	102		Panav			105		Math
+	103		Prem			103		Science
+						107		Computer Science
+
+	SELECT * 
+	FROM student as s
+	LEFT JOIN course as c
+	ON s.student_id = c.student_id
+	UNION
+	SELECT *
+	FROM student as s
+	RIGHT JOIN course as c
+	ON s.student_id = c.student.id
+
+	Result :-
+	student_id	name	course
+	101		Suarj	null
+	102		Pranav	English
+	103		Prem 	Science
+	105		null 	math
+	107		null	computer science

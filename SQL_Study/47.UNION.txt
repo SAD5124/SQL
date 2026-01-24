@@ -1,0 +1,20 @@
+UNION :-Remove Duplicates give unique values
+	It is used to combine result-set of two or more SELECT statements
+	Given UNIQUE records
+			 	    			 				         (-) (-)           
+       												( A()B  )	
+		                                                		                 (_) (_)
+												/	\
+	To use it :- 									    table  <-->  table
+		every SELECT should have have same no. of columns				   UNION
+		columns must have similar data types
+		columns in every SELECT should be in same order
+
+	
+
+	Syntax :-
+	SELECT column(s) FROM tableA
+	UNION 
+	SELECT column(s) FROM tableB
+
+UNION ALL :- Allow Duplicates, give all values

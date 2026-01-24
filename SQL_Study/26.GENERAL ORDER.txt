@@ -1,0 +1,28 @@
+GENERAL ORDER :-
+
+	SELECT column(s) -------+
+				|-------+	
+	FROM table_name  -------+	|
+					|
+	WHERE condition	 ---------------+
+	(apply condition on row)
+
+
+	GROUP BY column(s) -----+
+				|
+	HAVING condition  ------+
+	(apply condition on groups)
+	
+	ORDER BY column(s) ASC;
+
+where write before group by
+having write after group by
+
+EX :- 
+
+	SELECT city
+	FROM student 
+	WHERE grade = "A"
+	GROUP BY city
+	HAVING MAX(marks) > 90
+	ORDER BY city ASC;

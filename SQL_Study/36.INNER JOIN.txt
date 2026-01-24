@@ -1,0 +1,25 @@
+INNER JOIN :-
+		Return record that have matching values in both tables
+											 (-)   (-)
+		syntax :-       							( A(|=|)B )
+			SELECT column(s)						 (_)   (_)
+			FROM tableA
+			INNER JOIN tableB
+			ON tableA.col_name = tableB.col_name;
+EX :- 
+	student 				course
+	student_id   	name			student_id	course			
+	101		Suraj			102		English
+	102		Panav			105		Math
+	103		Prem			103		Science
+						107		Computer Science
+
+	SELECT * 
+	FROM student 
+	INNER JOIN course
+	ON student.student_id = course.student_id;
+
+	Result :-
+	student_id	name	course
+	102		Pranav	English
+	103		Prem 	Science

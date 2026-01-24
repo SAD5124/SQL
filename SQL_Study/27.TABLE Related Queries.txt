@@ -1,0 +1,21 @@
+TABLE Related Quries :-		(Error code 1175 : safe mode = prevent from making changes which is not IMP )
+				(to turn off safe mode : SET SQL_SAFE_UPDATES = 0;)
+				(to turn on safe mode : SET SQL_SAFE_UPDATES = 1;)
+
+1} UPDATE(to update existing rows) :- 
+
+	UPDATE table_name
+	SET col1 = val1, col2 = val2
+	WHERE condition;
+
+EX :- 	UPDATE student							If in Collage , grade given is "A", "B", "C", "D", "F"
+	SET grade = "0"							if collage deside to give "O"utstanding instead of "A"	
+	WHERE grade = "A";						Update is used
+
+2} DELETE(to delete existing rows) :-
+
+	DELETE FROM table_name 			If want to delete all data from  table :
+	WHERE condition;						  		DELETE FROM table_name;
+
+EX :- 	DELETE FROM student							EX :- 	DELETE FROM student
+	WHERE marks < 33; 

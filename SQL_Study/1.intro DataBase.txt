@@ -1,0 +1,14 @@
+(DB)DataBase :- Collection of data
+DBMS(Database Management System) :- Software Application used to      manage (DB)DataBase.
+
+USER -=> DBMS -=> DB
+     SQL
+
+Types of DataBases :-
+
+1.Relational DataBase :- Data stored in TABLE
+                         SQL used to work with R-DBMS
+ 			 EX :- MYSQL, ORACLE, PostgreSQL, SQLServer
+
+2.Non-Relational DataBase / NoSQL :- Data NOT stored in table
+ 			     EX :- mongoDB

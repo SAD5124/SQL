@@ -1,0 +1,11 @@
+ALISE :-
+
+	ALTERNATE name / DUPLICATE name
+	
+	We big tables which have big names so alice is used
+
+EX :- 
+ 	SELECT * 
+	FROM STUDENT as s  		#here as s meaning : student = s : we can use both s & student
+	INNER JOIN course as c		#here as c meaning : course = c : we can use both c & course
+	ON student.id = course.cou_id;  / ON s.id = c.id;
