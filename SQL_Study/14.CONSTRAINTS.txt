@@ -1,0 +1,40 @@
+CONSTRAINTS :-		Col_name - DataType - Constraint
+
+SQL constraints are used to SPECIFIC RULES for data in table
+
+NOT NULL :- Column can NOT have NULL Value
+  
+	    col1 int Not NULL
+
+UNIQUE :- All Values in Column are different 
+
+	    col1 int UNIQUE
+
+PRIMARY KEY :- make Column Unique & Not Null but used only for one 
+
+	    id int PRIMARY KEY
+
+	    CREATE TABLE temp (
+		id INT NOT NULL, 
+		PRIMARY KEY(id)
+			); 
+FOREIGN KEY :- prevent action that would destroy links between tables
+
+		CREATE TABLE temp (
+			cust_id INT, 
+			FOREIGN KEY (cust_id) references customer(id)
+				);
+
+DEFAULT :- set DEFAULT Value of Column
+		
+		salary INT DEFAULT 25000
+CHECK :- it can limit values allowed in column
+
+	CREATE TABLE city (
+		id INT PRIMARY KEY, 
+		city VARCHAR(50),
+		age INT,
+		CONSTRAINT age_check CHECK (age >= 18 AND city = "Delhi"));
+
+	CREATE TABLE newTab (
+		age INT CHECK (age >= 18));					

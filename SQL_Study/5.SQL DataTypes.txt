@@ -1,0 +1,28 @@
+SQL DataTypes :- They define TYPE OF VALUES that can STORED in a COLUMN
+
+
+DATATYPE	DESCRIPTION						USAGE
+CHAR		string(0-225), can store characters of fixed length	CHAR(50)            EX :- |P|U|N|E|*|*|*|*|
+VARCHAR		string(0-225), can store characters up to given length	VARCHAR(50)	    EX :- |P|U|N|E|
+BLOB		string(0-65535), can store binary large object		BLOB(1000)
+INT 		integer(-2,147,483,648 to 2,147,483,647)		INT
+TINYINT		integer(-128 to 127)					TINYINT
+BIGINT		integer(-9,223,372,036,854,775,808 to			BIGINT
+			9,223,372,036,854,775,808 )
+BIT 		can store x-bit values. xcan range from 1 to 64		BIT(2)		    EX :- 1} BIT(1) = 0,1 
+												  2} BIT(2) = 00, 10, 01, 11
+FLOAT		decimal number - with precision to 23 digit		FLOAT
+DOUBLE		decimal number - with 24 to 53 digits			DOUBLE
+BOOLEAN		Boolean values 0 or 1 					BOOLEAN
+DATE 		date in format of YYYY-MM-DD raging from		DATE
+			1000-01-01 to 9999-12-31
+YEAR		year in 4 digit format ranging from 1901 to 2155	YEAR
+
+SQL DATATYPES :-
+	Signed & unsigned                     numeric \
+						||     \
+  TINYINT UNSIGNED (0 to 225)		       \\//     \
+  TINYINT (-128 to 127)			        INT	 \   +ve   &   -ve
+						FLOAT	 /   age
+						DOUBLE  /   salary
+						TINYINT/

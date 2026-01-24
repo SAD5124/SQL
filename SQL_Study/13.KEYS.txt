@@ -1,0 +1,18 @@
+KEYS :-
+
+1} PRIMARY KEY :- (Unique, Not Null)
+		It is COLUMN (or set of columns) in TABLE that UNIQUELY IDENTIFIED each ROW (Unique ID)
+		There is only 1 PK & it should NOT null
+
+2} FOREIGN KEY :-
+		Foreign key is column (or set of columns) in table that refers to primary key of another table
+		There can be multiple FKs
+		FKs can have duplicate & null values
+EX :- 
+	table1 - Student					table2 - City
+	
+	id(PK)	name	cityid(FK)	  city			id(PK)	city_name
+	101	KRUSHNA	1		Pune			1	Pune
+	102	SHIV	2		Mumbai			2	Mumbai
+	103	SURAJ	1		Pune			3	Delhi
+	104 	RADHA	3		Delhi

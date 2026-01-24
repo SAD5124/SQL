@@ -1,0 +1,26 @@
+LEFT / RIGHT Exclusive Join :- 
+
+
+     		 (-)  (-)     			 				 (-)   (-)           
+       		(|=|A()B )							( A()B|=|)	
+		 (_)  (_)	      		 				 (_)   (_)	 
+ 	   LEFT EXCLUSIVE JOIN		  				    RIGHT EXCLUSIVE JOIN	
+
+Syntax :-						 	Syntax :-
+	SELECT column(s)        					SELECT column(s)			  
+	FROM tableA							FROM tableA
+	LEFT JOIN tableB						RIGHT JOIN tableB
+	ON tableA.col_name = tableB.col_name;				ON tableA.col_name = tableB.col_name
+	WHERE tableB.col_name IS NULL;					WHERE tableA.col_name IS NULL;
+
+EX :-	SELECT * 						EX :- 	SELECT * 
+	FROM student as s						FROM student as s
+	LEFT JOIN course as c						RIGHT JOIN course as c
+	ON s.student_id = c.student_id					ON s.student_id = c.student_id;
+	WHERE c.student_id IS NULL;					WHERE s.student_id IS NULL;	
+ 
+	Result :-						Result :- 
+	student_id	name	course				student_id	name	course
+	101		Suarj	null				105		null	math
+								106		null	computer science
+	

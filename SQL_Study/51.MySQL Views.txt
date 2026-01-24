@@ -1,0 +1,11 @@
+MySQL Views :-
+		A view is vitual table based on result-set of an SQL statement				Tables			Views
+													   |			  |
+													  real			virtual 
+	CREATE VIEW view1 AS										   |			tables
+	SELECT rollno, name FROM student;								real data		   |
+													   |			
+	SELECT * FROM view1;										Operations 
+													reflect in database
+
+* View always show up-to-date data. The database engine recreate view, every time user queries it.

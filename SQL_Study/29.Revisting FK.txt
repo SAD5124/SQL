@@ -1,0 +1,14 @@
+Revisiting FK :-
+
+	course(Parent Table)				teacher(Child Table)
+		
+	cou_id(PK)	name			tea_id	name	cou_id(FK)
+	     101	science		/	101	Krish	101
+	     102	English        <===	102	Shiv	103
+	     103  	hindi		\	103	RAM	102
+					FK	104	Radha	102
+
+
+
+EX :- 	FOREIGN KEY(cou_id)
+	REFERENCES course;

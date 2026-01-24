@@ -1,0 +1,23 @@
+DataBase Structure :- Database Contains many TABLEs
+			Each TABLE contains DATA 
+			All TABLEs has interrelated DATA
+
+	+.................................................
+	|
+	|			DataBase
+	|
+	|	+.........+		+............+
+	|	| Table 1		|  Table 2
+	|	|   			|
+	|	|   Data		|    Data
+	|	+.........+		+............+
+	|
+	+...................................................
+
+EX :- Suppose we CREATE 
+		
+		DataBase for Collage
+			  |
+	+.................+.................+
+	|                 |                 |
+	Student Name 	Student Fees	Courses

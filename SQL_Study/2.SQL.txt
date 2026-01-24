@@ -1,0 +1,17 @@
+SQL(Structure Query Language) :- SQL is Programming Language
+ 				 SQL used to interact with R-DBMS
+
+SQL used to perform CRUD operation :-
+
+ 	Create
+ 		Read
+ 			Update
+ 				Delete
+ 
+
+SEQUEL :- Structured English QUery Language
+ 	  Made by IBM and named it SEQUEL
+
+SQL :- Structured Query Language
+
+*BOTH SQL and SQUEL is same

@@ -1,0 +1,27 @@
+TABLE :- Table is combination ROW and COLUMN
+	 Vertical is Column
+	 Horizontal is Row
+
+COLUMN = Structure / Schema(Design)
+ROW 	 = individual DATA
+
+EX :- Student Table
+
+	+--------+--------+---------
+	|Roll NO.|NAME	  |
+	+________+________+	 
+	|    1	 |SURAJ	  |       ==>> Row 1
+	|    2	 |SHIV	  |	  ==>> Row 2
+	|    3	 |SAKHI	  |	  ==>> Row 3
+	|    4	 |RADHA	  |
+	|    5	 |KRUSHNA |
+	|	 |	  |
+	+--------+--------+------
+		
+	    ||	      ||
+	    ||        ||
+	   \\//      \\//
+	Column 1    Column 2	
+
+First ROW means DATA of 1st Student is stored
+2nd ROW means DATA of 2st Student is stored 

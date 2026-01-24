@@ -1,0 +1,18 @@
+WHERE CLAUSE :-	
+   1} To Define some Condition
+
+	SELECT col1, col2 FROM table_name
+	WHERE conditions;
+
+EX :- 	SELECT * FROM student WHERE marks > 80;
+	SELECT * FROM student WHERE city = "Mumbai";
+
+   2} Using operators in WHERE
+ 	
+	Arithmetic Operators : +(Addition), -(Sub), *(Multiplication), /(division), %(modulus / reminder) ex. 4 % 2 = 0
+
+	Comparison Operators : =(Equal to), !=(not equal to), >, >=, <, <=
+
+	Logical Operations : AND, OR, NOT, IN, BETWEEN, ALL, LIKE, ANY
+
+	Bitwise Operators : &(Bitwise AND), |(Bitwise OR)

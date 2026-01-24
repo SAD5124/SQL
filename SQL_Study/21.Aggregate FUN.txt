@@ -1,0 +1,15 @@
+AGGREGATE Function :-
+		      AGGREGATE Function perform calculation on set/many of values, and return a single value.
+
+			1. COUNT()
+			2. MAX() :- Get MAXimum Marks
+ 
+			            SELECT max (marks)
+				    FROM  student;
+
+			3. MIN()
+			4. SUM()
+			5. AVG() :- Get AVeraGe Marks	
+							
+				    SELECT avg(marks)
+				    FROM student; 

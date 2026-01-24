@@ -1,0 +1,29 @@
+RIGHT Join :- 
+     	    Returns all records from Right table, and matched records from left table 		 (-)     (-)         
+    	         								        	( A(|=|)B|=|)	
+		 										 (_)     (_)	
+	Syntax :-
+	SELECT column(s)        								  RIGHT JOIN
+	FROM tableA
+	RIGHT JOIN tableB
+	ON tableA.col_name = tableB.col_name;
+
+EX :- 
+	student(LEFT) 				course(RIGHT)
+	student_id   	name			student_id	course			
+	101		Suraj			102		English
+	102		Panav			105		Math
+	103		Prem			103		Science
+						107		Computer Science
+
+	SELECT * 
+	FROM student as s
+	 JOIN course as c
+	ON s.student_id = c.student_id;
+
+	Result :-
+	student_id	course		   name 
+	102		English		   Pranav
+	105		Math		   null
+	103		Science		   Prem
+	107		Computer Science   null

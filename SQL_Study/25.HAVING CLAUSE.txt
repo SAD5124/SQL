@@ -1,0 +1,10 @@
+HAVING Clause :- 								     WHERE -=> used to apply condition on ROWs
+		 Similar to where i.e applied some condition on row			
+		 Used when we want to apply any CONDITION AFTER GROUPING		HAVING -=> used to apply condition on GROUPs
+
+	Count number of studement in each city where max marks cross 90
+
+		SELECT COUNT(name), city
+		FROM student
+		GROUP BY city
+		HAVING MAX(marks) > 90;

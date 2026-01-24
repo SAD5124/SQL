@@ -1,0 +1,11 @@
+ORDER BY CLAUSE :-
+		   To sort in ascending (ASC) or descending order (DESC)
+
+			1} ASCENDING(ASC)   1 -> 2 -> 3 -> 4 -> 5 ->
+			2} DESCENDING(DESC)  5 -> 4 -> 3 -> 2 -> 1 ->
+
+	SELECT * FROM student
+	ORDER BY city ASC;
+
+	SELECT col1, col2 FROM table_name
+	ORDER BY col_name(s) ASC;

@@ -1,0 +1,12 @@
+GROUP BY CLAUSE :-
+		   Groups rows that have same values into summary rows
+		   It collect data from Multiple Records and Groups the Result by one or more Column
+
+
+		* Generally we use Group By with some aggregation Function
+
+		  Count number of students in each city
+			
+			SELECT city, count(name)
+			FROM student
+			GROUP BY city;
